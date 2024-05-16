@@ -102,7 +102,7 @@ contract ProxyDeployer {
 > #####따라서 이번 실습에서는 remix가 아닌 etherscan에서 함수를 동작시켜보겠습니다.<br>
 
 > 먼저 remix의 왼쪽 아래 plugin manager를 클릭 후 CONTRACT VERIFICATION - ETHERSCAN을 activate 시켜줍니다.<br>
-
+<img src="https://github.com/Joon2000/Proxy-Contract/blob/main/images/plugin%20Etherscan.png" width="30%" height="60%" alt="Proxy structure"></img><br><br
 > etherscan 로근인 후 api key를 발급받아 입력해줍니다.<br>
 > implementation contract 먼저 verify 합니다.<br>
 >> contract name에 HelloWorldV1을 선택하고 address를 입력 후 verify 해줍니다.<br>
@@ -112,6 +112,9 @@ contract ProxyDeployer {
 >> Constructor Arguments도 채워줍니다.<br>
 <img src="https://github.com/Joon2000/Proxy-Contract/blob/main/images/proxy%20contract%20verify.png" width="30%" height="60%" alt="Proxy structure"></img><br><br>
 
+### etherscan에서 함수 동작하기
+> etherscan sepolia(https://sepolia.etherscan.io/)에서 proxy contract address로 scan합니다.
+> 
 
 
 이번 tutorial은 solidity 공식문서가 아닌 https://jamesbachini.com/proxy-contracts-tutorial/로부터 MIT license 코드를 사용했습니다.
