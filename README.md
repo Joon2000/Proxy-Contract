@@ -99,7 +99,7 @@ contract ProxyDeployer {
 ]
 ```
 > 위의 abi를 보면 implementation contract의 setText함수가 보이지 않는 것을 확인할 수 있습니다.<br> 
-> #####따라서 이번 실습에서는 remix가 아닌 etherscan에서 함수를 동작시켜보겠습니다.<br>
+> ##### 따라서 이번 실습에서는 remix가 아닌 etherscan에서 함수를 동작시켜보겠습니다.<br>
 
 > 먼저 remix의 왼쪽 아래 plugin manager를 클릭 후 CONTRACT VERIFICATION - ETHERSCAN을 activate 시켜줍니다.<br>
 <img src="https://github.com/Joon2000/Proxy-Contract/blob/main/images/plugin%20Etherscan.png" width="30%" height="60%" alt="Proxy structure"></img><br><br
@@ -107,14 +107,17 @@ contract ProxyDeployer {
 > implementation contract 먼저 verify 합니다.<br>
 >> contract name에 HelloWorldV1을 선택하고 address를 입력 후 verify 해줍니다.<br>
 <img src="https://github.com/Joon2000/Proxy-Contract/blob/main/images/HelloWorldV1%20verify.png" width="30%" height="60%" alt="Proxy structure"></img><br><br>
-> 다음으로 proxt contract를 verify 해줍니다.<br>
+> 다음으로 proxy contract를 verify 해줍니다.<br>
 >> 이때 It's a proxy contract address를 선택해주고 implementation contract 주소를 기입합니다<br>
 >> Constructor Arguments도 채워줍니다.<br>
 <img src="https://github.com/Joon2000/Proxy-Contract/blob/main/images/proxy%20contract%20verify.png" width="30%" height="60%" alt="Proxy structure"></img><br><br>
 
+##주의 혅
+
 ### etherscan에서 함수 동작하기
 > etherscan sepolia(https://sepolia.etherscan.io/)에서 proxy contract address로 scan합니다.
-> 
+<img src="https://github.com/Joon2000/Proxy-Contract/blob/main/images/etherscan%20proxy%20contract.png" width="80%" height="50%" alt="Proxy structure"></img><br><br>
+> proxy contract에서 text의 내용을 바꿔도 implementation contract의 text 데이터는 변하지 않는것을 확인할 수 있습니다.
 
 
 이번 tutorial은 solidity 공식문서가 아닌 https://jamesbachini.com/proxy-contracts-tutorial/로부터 MIT license 코드를 사용했습니다.
